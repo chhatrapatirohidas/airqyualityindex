@@ -1,0 +1,44 @@
+body{
+    background-image: radial-gradient(circle, #84CEEB,#5AB9EA,#C1C8E4,#8860D0);
+ }
+ .app-name{
+   color: #25274D;
+   font-size: 70px;
+   font-weight: bold;
+ }
+ #para{
+   color:#8860D0 ;
+   font-style: italic;
+   font-family: cursive;
+   font-size: 30px;
+
+
+ }
+  .app-name-extended{
+   color: #39395f;
+   font-size: 30px;
+
+ }
+ .navbar{
+   background-color: #25274D;
+
+ }
+ h2{
+   text-align: center;
+ }
+.box1{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+background-color: #C1C8E4;
+border-radius: 25px;
+padding: 30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box2{
+background-color: #C1C8E4;
+border-radius: 25px;
+padding: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

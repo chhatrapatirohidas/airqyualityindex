@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AirQualityIndexTracker</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+    body{
+       background-image: radial-gradient(circle, #84CEEB,#5AB9EA,#C1C8E4,#8860D0);
+    }
+    .app-name{
+      color: #25274D;
+      font-size: 70px;
+      font-weight: bold;
+    }
+    #para{
+      color:#8860D0 ;
+      font-style: italic;
+      font-family: cursive;
+      font-size: 30px;
+
+
+    }
+     .app-name-extended{
+      color: #39395f;
+      font-size: 30px;
+
+    }
+     .navbar{
+      background-color:#25274D;
+
+    }
+
+    .box{
+      background-color:#C1C8E4;
+      border-radius: 25px;
+      margin: 35px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .heading{
+      font-size: 30px;
+      padding: 20px;
+      color: #5680E9;
+      font-weight: bold;
+
+    }
+</style>
+</head>
+<body>
+
+<div class="container-fluid text-center">
+
+
+<h1 class="app-name"><strong>AQI</strong><small class="app-name-extended">tracker</small></h1>
+<p id="para">Check Air Quality Index</p>
+
+
+<nav class="navbar">
+<div class="container-fluid">
+
+
+<ul class="nav navbar-nav">
+<li ><a href="/index.html">Home</a></li>
+
+<li><a href="#">Map</a></li>
+
+<li><a href="/">AQI Calculator</a></li>
+<li class="active"><a href="/aqitracker.html">Report</a></li>
+<li><a href="#">About</a></li>
+
+</ul>
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="#"> Sign in</a></li>
+<li><a href="#"> Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<br>
+
+<div class="col-sm-6">
+<div class="box">
+<div class="container-fluid">
+<h3 class="heading">Concentration to AQI</h3>
+<br>
+
+<div class="form-group">
+<label for="usr">Select a pollutant</label>
+<input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+<label for="pwd">Units</label>
+<input type="password" class="form-control" id="pwd">
+</div>
+
+<div class="form-group">
+<label for="usr">Enter the concentration</label>
+<input type="text" class="form-control" id="usr">
+</div>
+
+
+
+<input type="submit" class="btn btn-info" value="Calculate">
+
+<br>
+<div class="form-group">
+<label for="usr">Calculate AQI</label>
+<input type="text" class="form-control" id="usr">
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box">
+<div class="container-fluid">
+<h3 class="heading">AQI to concentration</h3>
+<br>
+<div class="form-group">
+<label for="usr">Select a pollutant</label>
+<input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+<label for="pwd">Enter the AQI</label>
+<input type="password" class="form-control" id="pwd">
+</div>
+
+
+
+<input type="submit" class="btn btn-info" value="Calculate">
+
+<br>
+<div class="form-group">
+<label for="usr">Concentraion</label>
+<input type="text" class="form-control" id="usr">
+</div>
+
+<div class="form-group">
+<label for="usr">Units</label>
+<input type="text" class="form-control" id="usr">
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+
+</body>
+</html>

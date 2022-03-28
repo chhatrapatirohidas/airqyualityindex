@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AirQualityIndexTracker</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+    body{
+       background-image: radial-gradient(circle, #84CEEB,#5AB9EA,#C1C8E4,#8860D0);
+    }
+    .app-name{
+      color: #25274D;
+      font-size: 70px;
+      font-weight: bold;
+    }
+    #para{
+      color:#8860D0 ;
+      font-style: italic;
+      font-family: cursive;
+      font-size: 30px;
+
+
+    }
+     .app-name-extended{
+      color: #39395f;
+      font-size: 30px;
+
+    }
+    .navbar{
+      background-color: #25274D;
+
+    }
+   h2{
+    text-align: center;
+    color: #25274D;
+    font-family: arila !important;
+   }
+   h3{
+    text-align: center;
+    color: #8860D0;
+    font-family: arial !important;
+   }
+   h4{
+    text-align: center;
+    color: #25274D;
+    font-family: arial !important;
+   }
+
+    .progress-bar:hover{
+      background-color: #5680E9;
+    }
+    .box{
+      background-color: #86C232;
+      border-radius: 10px;
+      margin: 35px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .box1{
+      background-color:#C1C8E4;
+      border-radius: 25px;
+      margin: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .info{
+      margin: 20px;
+      padding-top: 100px;
+    }
+
+    .good{
+  background-color: greenyellow;
+  font-size: 20px;
+  color:black;
+}
+.yellow{
+  background-color: yellow;
+  opacity: 0.7;
+  font-size: 20px;
+  color:black;
+}
+.maroon{
+  background-color: maroon;
+  opacity: 0.7;
+  font-size: 20px;
+  color:black;
+}
+.red{
+  background-color: red;
+  opacity: 0.7;
+  font-size: 20px;
+  color:black;
+}
+
+.purple{
+  background-color: purple;
+  opacity: 0.7;
+  font-size: 20px;
+  color:black;
+}
+
+.orange{
+  background-color: orange;
+  opacity: 0.7;
+  font-size: 20px;
+  color:black;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="container-fluid text-center">
+
+
+<h1 class="app-name"><strong>AQI</strong><small class="app-name-extended">tracker</small></h1>
+<p id="para">Check Air Quality Index</p>
+
+
+<nav class="navbar">
+<div class="container-fluid">
+
+
+<ul class="nav navbar-nav">
+<li><a href="/index.html">Home</a></li>
+
+<li><a href="#">Map</a></li>
+
+<li><a href="/aqicalculator.html">AQI Calculator</a></li>
+<li class="active"><a href="/">Report</a></li>
+<li><a href="#">About</a></li>
+
+</ul>
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="#"> Sign in</a></li>
+<li><a href="#"> Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="col-sm-8">
+<div class="container-fluid">
+<h2>What's the Air Quality at your place?</h2>
+
+<div class="col-sm-6">
+<div class="box1">
+<div class="container-fluid">
+<h2>Air Quality Index</h2>
+<h3>20</h3>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box1">
+<div class="container-fluid">
+<h2>Prominent Pollutant</h2>
+<h3>PM 2.5</h3>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box1">
+<div class="container-fluid">
+<h2>Air Pollution level</h2>
+<h3>Good</h3>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box1">
+<div class="container-fluid">
+<h2>Level of concern</h2>
+<h3>Safe</h3>
+</div>
+</div>
+</div>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="col-sm-12">
+<h2>Pollutants</h2>
+<br>
+<div class="progress">
+<div class="progress-bar" style="width:70%">Pm 2.5</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:30%">PM 10</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:25%">NO2</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:46%">NH3</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:38%">SO2</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" style="width:55%">Ozone</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<div class="box">
+<div class="container-fluid">
+<h2>Air Quality Index</h2>
+<br>
+<h4>20</h4>
+
+<br>
+<br>
+<h2>Good</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4><i class="fas fa-location"></i>Rourkela,Odisha</h4>
+<h4><i class="fas fa-date"></i>16th February,Wednesday</h4>
+<h4><i class="fas fa-time"></i>10.30 AM</h4>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="info">
+<div class="container-fluid">
+<table class="table">
+<thead>
+<tr class="table_head">
+<th><strong>AQI Color</strong></th>
+<th><strong>Level of Concern</strong></th>
+<th><strong>Index Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="good">
+<td>Green</td>
+<td>Good</td>
+<td>0-50</td>
+</tr>
+<tr class="yellow">
+<td>Yellow</td>
+<td>Moderate</td>
+<td>51-100</td>
+</tr>
+<tr class="orange">
+<td>Orange</td>
+<td>Unhealthy for sensitive groups</td>
+<td>101-150</td>
+</tr>
+<tr class="red">
+<td>Red</td>
+<td>Unhealthy</td>
+<td>151-200</td>
+</tr>
+<tr class="purple">
+<td>Purple</td>
+<td>Very Unhealthy</td>
+<td>201-300</td>
+</tr>
+<tr class="maroon">
+<td>Maroon</td>
+<td>Hazardous</td>
+<td>300 and higher</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
