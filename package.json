@@ -10,7 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/chhatrapatirohidas/airqyualityindex.git"
   },
-  "keywords": [],
+  "keywords": ["example",
+    "heroku"],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/chhatrapatirohidas/airqyualityindex#readme",
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
