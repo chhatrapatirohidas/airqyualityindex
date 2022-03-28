@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 app.use(express.json());
 
-const static_path = path.join(__dirname, "/client");
+const static_path = path.join(__dirname, "client");
 
 app.use(express.static(static_path));
 
